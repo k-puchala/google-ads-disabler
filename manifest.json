@@ -1,0 +1,20 @@
+{   
+    "icons": {
+        "16": "/images/icon16_.png",
+        "48": "/images/icon48_.png",
+        "128": "/images/icon128_.png"
+    },
+    "manifest_version": 3,
+    "name": "Google Ads Disabler",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+        "matches": ["https://www.google.com/*", "https://www.facebook.com/*", "https://www.instagram.com/*"],
+        "run_at": "document_start",
+        "all_frames": true,
+        "js": ["content_script.js"]
+        }
+    
+    ]
+  }
+  
